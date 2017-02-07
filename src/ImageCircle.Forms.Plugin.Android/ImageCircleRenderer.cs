@@ -97,7 +97,7 @@ namespace ImageCircle.Forms.Plugin.Droid
 
                 var paint = new Paint();
                 paint.AntiAlias = true;
-                paint.SetStyle(Paint.Style.Fill);
+                paint.SetStyle(Paint.Style.Fill); // Fill
                 paint.Color = ((CircleImage)Element).FillColor.ToAndroid();
                 canvas.DrawPath(path, paint);
                 paint.Dispose();
